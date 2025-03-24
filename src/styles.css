@@ -1,0 +1,126 @@
+/* Global styles for dark mode */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* App container centered */
+  .app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #1f1f1f;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .navbar h1 {
+    font-size: 28px;
+    color: #6e7dff;
+    font-weight: bold;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #e0e0e0;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #6e7dff;
+  }
+  
+  /* Container for content */
+  .container {
+    background: linear-gradient(135deg, #6e7dff, #3a4dff);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin-top: 80px; /* Offset for navbar */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Bold header */
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Inputs and button styles */
+  input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+  }
+  
+  /* Button styles */
+  button {
+    background-color: #3a4dff;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #6e7dff;
+  }
+  
+  /* Styling for inputs */
+  input {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    border: 1px solid #333;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #3a4dff;
+  }
+  
+  input::placeholder {
+    color: #999;
+  }
+  
+  .text-gradient {
+    background: linear-gradient(45deg, #6e7dff, #3a4dff);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
